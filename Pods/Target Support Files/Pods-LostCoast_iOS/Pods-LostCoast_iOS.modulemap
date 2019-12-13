@@ -1,0 +1,6 @@
+framework module Pods_LostCoast_iOS {
+  umbrella header "Pods-LostCoast_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

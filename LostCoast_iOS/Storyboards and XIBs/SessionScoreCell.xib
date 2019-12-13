@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SessionScoreCell" customModule="LostCoast_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overall Session Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXz-00-jZP">
+                    <rect key="frame" x="105.5" y="15" width="164" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                    <color key="textColor" red="0.13725490200000001" green="0.81176470590000005" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FrO-6d-T0o" customClass="RadarChartView" customModule="Charts">
+                    <rect key="frame" x="0.0" y="41" width="375" height="289"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.059999999999999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FrO-6d-T0o" firstAttribute="top" secondItem="CXz-00-jZP" secondAttribute="bottom" constant="8" id="0eN-nS-4Ty"/>
+                <constraint firstItem="FrO-6d-T0o" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="1Ze-vh-qgk"/>
+                <constraint firstItem="CXz-00-jZP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6E0-kl-vzG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FrO-6d-T0o" secondAttribute="bottom" constant="20" id="IVq-Ck-yPa"/>
+                <constraint firstItem="CXz-00-jZP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="ocm-kS-lc8"/>
+                <constraint firstItem="FrO-6d-T0o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sIn-cZ-SfM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="overallScoreChartView" destination="FrO-6d-T0o" id="CPS-WP-Dok"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="24"/>
+        </view>
+    </objects>
+</document>

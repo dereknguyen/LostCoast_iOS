@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E93D6FADC823685E84664C76 /* Pods_LostCoast_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA04EB89B2724E7D9AB13321 /* Pods_LostCoast_iOS.framework */; };
+		F202E866213BB0EE00FE9E9A /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202E865213BB0EE00FE9E9A /* DesignableButton.swift */; };
+		F202E868213BB69600FE9E9A /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F202E867213BB69600FE9E9A /* DesignableImageView.swift */; };
+		F212D7272137E79000F21655 /* SurfSessionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212D7262137E79000F21655 /* SurfSessionData.swift */; };
+		F21CF17B213255FB001DA41B /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CF17A213255FB001DA41B /* ProgressBar.swift */; };
+		F21CF17D21325653001DA41B /* ComparableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CF17C21325653001DA41B /* ComparableExtensions.swift */; };
+		F21CF18021325FA9001DA41B /* BasicStatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21CF17F21325FA9001DA41B /* BasicStatCell.xib */; };
+		F21CF188213264E8001DA41B /* BasicStatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CF187213264E8001DA41B /* BasicStatCell.swift */; };
+		F21CF18A213270C0001DA41B /* TotalTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21CF189213270C0001DA41B /* TotalTimeCell.xib */; };
+		F21CF18C21327751001DA41B /* TotalTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CF18B21327751001DA41B /* TotalTimeCell.swift */; };
+		F21CF1902132AFB4001DA41B /* SessionScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21CF18F2132AFB4001DA41B /* SessionScoreCell.xib */; };
+		F21CF1922132B548001DA41B /* SessionScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21CF1912132B548001DA41B /* SessionScoreCell.swift */; };
+		F2308592214B100F00573822 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2308591214B100F00573822 /* CustomImageView.swift */; };
+		F2308594214B2EBB00573822 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2308593214B2EBB00573822 /* TimeIntervalExtension.swift */; };
+		F24F601E2139A2D9000F90CE /* Offline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24F601D2139A2D9000F90CE /* Offline.swift */; };
+		F24F60202139A98D000F90CE /* SurfSessionDataAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24F601F2139A98D000F90CE /* SurfSessionDataAPI.swift */; };
+		F24F6060213A91CA000F90CE /* SerializationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24F605F213A91CA000F90CE /* SerializationExtensions.swift */; };
+		F25738CC21360D9200C16B5C /* TotalTimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25738CA21360D9200C16B5C /* TotalTimeCollectionViewCell.swift */; };
+		F25738CD21360D9200C16B5C /* TotalTimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25738CB21360D9200C16B5C /* TotalTimeCollectionViewCell.xib */; };
+		F25738D02136198500C16B5C /* WavesCaughtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25738CE2136198500C16B5C /* WavesCaughtCollectionViewCell.swift */; };
+		F25738D12136198500C16B5C /* WavesCaughtCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F25738CF2136198500C16B5C /* WavesCaughtCollectionViewCell.xib */; };
+		F25A1550212A7BA1004F278A /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A154F212A7BA1004F278A /* ProgressHUD.swift */; };
+		F25A1554212A98AA004F278A /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A1553212A98AA004F278A /* Enums.swift */; };
+		F25A155B212AD75B004F278A /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A155A212AD75B004F278A /* Step3ViewController.swift */; };
+		F25A155F212AEB6F004F278A /* Step4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A155E212AEB6F004F278A /* Step4ViewController.swift */; };
+		F25A1562212AF8F9004F278A /* Step5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25A1561212AF8F9004F278A /* Step5ViewController.swift */; };
+		F27F700E2139619700C5269A /* LostCoastUserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F700D2139619700C5269A /* LostCoastUserAPI.swift */; };
+		F28E2943212E63D7008AC4D3 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2942212E63D7008AC4D3 /* UIApplicationExtensions.swift */; };
+		F28E2946212E8FF7008AC4D3 /* PersonalInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2945212E8FF7008AC4D3 /* PersonalInfoTableViewController.swift */; };
+		F28E2948212EC513008AC4D3 /* EditTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2947212EC513008AC4D3 /* EditTextFieldViewController.swift */; };
+		F28E294A212ECE69008AC4D3 /* BioEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2949212ECE69008AC4D3 /* BioEditViewController.swift */; };
+		F28E294C212ECFF9008AC4D3 /* BirthdayEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E294B212ECFF9008AC4D3 /* BirthdayEditViewController.swift */; };
+		F28E294E212ED4FD008AC4D3 /* LocationEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E294D212ED4FD008AC4D3 /* LocationEditTableViewController.swift */; };
+		F28E2950212EDA4F008AC4D3 /* LocationDetailEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E294F212EDA4F008AC4D3 /* LocationDetailEditTableViewController.swift */; };
+		F28E2952212EDAC3008AC4D3 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2951212EDAC3008AC4D3 /* LocationTableViewCell.swift */; };
+		F28E2954212EDBDD008AC4D3 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2953212EDBDD008AC4D3 /* Locations.swift */; };
+		F28E2956212EEE6A008AC4D3 /* SearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2955212EEE6A008AC4D3 /* SearchBarExtension.swift */; };
+		F28E2958212EF8A9008AC4D3 /* GenderEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28E2957212EF8A9008AC4D3 /* GenderEditViewController.swift */; };
+		F290157E2145CD9F009FDF49 /* RealmServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290157D2145CD9F009FDF49 /* RealmServiceAPI.swift */; };
+		F2965902212E336A00E01232 /* MainTabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2965901212E336A00E01232 /* MainTabs.storyboard */; };
+		F2965905212E3C4000E01232 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2965904212E3C4000E01232 /* MainTabBarController.swift */; };
+		F296590A212E48A900E01232 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2965909212E48A900E01232 /* ProfileViewController.swift */; };
+		F296590C212E499F00E01232 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296590B212E499F00E01232 /* ProfileTableViewController.swift */; };
+		F2B28A452133D0DD0027387F /* SetupProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B28A442133D0DD0027387F /* SetupProfile.storyboard */; };
+		F2B28A47213403290027387F /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B28A46213403290027387F /* AnalyticsViewController.swift */; };
+		F2B28A49213411920027387F /* SegmentControlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B28A48213411920027387F /* SegmentControlBuilder.swift */; };
+		F2B28A4C213429320027387F /* SyncHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B28A4A213429320027387F /* SyncHistoryTableViewController.swift */; };
+		F2B28A5021342AE90027387F /* SyncHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B28A4E21342AE90027387F /* SyncHistoryCell.swift */; };
+		F2B28A5121342AE90027387F /* SyncHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B28A4F21342AE90027387F /* SyncHistoryCell.xib */; };
+		F2C14071212F111D00BFF0C6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C14070212F111D00BFF0C6 /* SettingsTableViewController.swift */; };
+		F2C14073212F1D7E00BFF0C6 /* BLEDeviceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C14072212F1D7E00BFF0C6 /* BLEDeviceTableViewController.swift */; };
+		F2C14076212F26B600BFF0C6 /* AchievementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C14075212F26B600BFF0C6 /* AchievementsTableViewController.swift */; };
+		F2C14078212F26D100BFF0C6 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C14077212F26D100BFF0C6 /* AchievementTableViewCell.swift */; };
+		F2C1407A212F297300BFF0C6 /* AchievementDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C14079212F297300BFF0C6 /* AchievementDetailsViewController.swift */; };
+		F2C529F82131404400131F35 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C529F72131404400131F35 /* FriendsTableViewController.swift */; };
+		F2C529FA21314D8B00131F35 /* FriendProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C529F921314D8B00131F35 /* FriendProfileTableViewController.swift */; };
+		F2C529FC213162BD00131F35 /* ProfileTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2C529FB213162BD00131F35 /* ProfileTab.storyboard */; };
+		F2C52A202132164D00131F35 /* RefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2C52A1F2132164D00131F35 /* RefreshView.xib */; };
+		F2C52A222132173200131F35 /* RefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C52A212132173200131F35 /* RefreshView.swift */; };
+		F2C52A2421321EB500131F35 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C52A2321321EB500131F35 /* HomeTableViewController.swift */; };
+		F2D8F65421266BD600E882CC /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F65321266BD600E882CC /* SignupViewController.swift */; };
+		F2D8F65621266BFB00E882CC /* SignupInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F65521266BFB00E882CC /* SignupInfoTableViewController.swift */; };
+		F2D8F65A21267EA000E882CC /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F65921267EA000E882CC /* Step1ViewController.swift */; };
+		F2D8F65C212680E300E882CC /* Step1InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F65B212680E300E882CC /* Step1InfoTableViewController.swift */; };
+		F2D8F65E212692B500E882CC /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F65D212692B500E882CC /* Step2ViewController.swift */; };
+		F2D8F6612126D80F00E882CC /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F65F2126D80F00E882CC /* StringExtensions.swift */; };
+		F2D8F6622126D80F00E882CC /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F6602126D80F00E882CC /* UITextFieldExtension.swift */; };
+		F2D8F6642126D89E00E882CC /* FirebaseServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F6632126D89E00E882CC /* FirebaseServiceAPI.swift */; };
+		F2D8F6662126E23000E882CC /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F6652126E23000E882CC /* Alert.swift */; };
+		F2D8F6682126EF8E00E882CC /* LostCoastUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8F6672126EF8E00E882CC /* LostCoastUser.swift */; };
+		F2E095FD213457F50044784B /* RecordCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E095FC213457F50044784B /* RecordCollectionViewController.swift */; };
+		F2E0960021345DF10044784B /* RecordCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E095FE21345DF10044784B /* RecordCategoryCell.swift */; };
+		F2E0960121345DF10044784B /* RecordCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E095FF21345DF10044784B /* RecordCategoryCell.xib */; };
+		F2E0960421347C0F0044784B /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E0960321347C0F0044784B /* HomeTab.storyboard */; };
+		F2E0960621347C330044784B /* AnalyticsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E0960521347C330044784B /* AnalyticsTab.storyboard */; };
+		F2E0960821347F7D0044784B /* AnalysisHighlightController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0960721347F7D0044784B /* AnalysisHighlightController.swift */; };
+		F2E0960A2134819D0044784B /* AnalysisHighlightHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E096092134819D0044784B /* AnalysisHighlightHeaderView.swift */; };
+		F2E0960D213486BD0044784B /* AnalysisHighlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E0960B213486BD0044784B /* AnalysisHighlightCell.swift */; };
+		F2E0960E213486BD0044784B /* AnalysisHighlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2E0960C213486BD0044784B /* AnalysisHighlightCell.xib */; };
+		F2E096122134FC080044784B /* ChartsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E096112134FC080044784B /* ChartsExtensions.swift */; };
+		F2E66883214C2A2700DD0A2F /* XAxisValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E66882214C2A2700DD0A2F /* XAxisValueFormatter.swift */; };
+		F2EB0BAF2124EE07009CE5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB0BAE2124EE07009CE5C1 /* AppDelegate.swift */; };
+		F2EB0BB12124EE07009CE5C1 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB0BB02124EE07009CE5C1 /* GreetingViewController.swift */; };
+		F2EB0BB42124EE07009CE5C1 /* LoginAndSignup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EB0BB22124EE07009CE5C1 /* LoginAndSignup.storyboard */; };
+		F2EB0BB62124EE09009CE5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2EB0BB52124EE09009CE5C1 /* Assets.xcassets */; };
+		F2EB0BB92124EE09009CE5C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2EB0BB72124EE09009CE5C1 /* LaunchScreen.storyboard */; };
+		F2EB0BC32124F125009CE5C1 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB0BC22124F125009CE5C1 /* UIImageViewExtensions.swift */; };
+		F2EB0BC52124FB5F009CE5C1 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB0BC42124FB5F009CE5C1 /* UIButtonExtension.swift */; };
+		F2EB0BC72125684F009CE5C1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB0BC62125684F009CE5C1 /* LoginViewController.swift */; };
+		F2EB0BCB21258658009CE5C1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2EB0BCA21258658009CE5C1 /* GoogleService-Info.plist */; };
+		F2EB0BCD21258ACD009CE5C1 /* LoginInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2EB0BCC21258ACD009CE5C1 /* LoginInfoTableViewController.swift */; };
+		F2F7727B213D306C009CF4F0 /* WindowSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7727A213D306C009CF4F0 /* WindowSwitcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		104E81C6A1E8808B741B0134 /* Pods-LostCoast_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostCoast_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LostCoast_iOS/Pods-LostCoast_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		98BCE1A3DC3537567E3A59C6 /* Pods-LostCoast_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LostCoast_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LostCoast_iOS/Pods-LostCoast_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AA04EB89B2724E7D9AB13321 /* Pods_LostCoast_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LostCoast_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F202E865213BB0EE00FE9E9A /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		F202E867213BB69600FE9E9A /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		F212D7262137E79000F21655 /* SurfSessionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSessionData.swift; sourceTree = "<group>"; };
+		F21CF17A213255FB001DA41B /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		F21CF17C21325653001DA41B /* ComparableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableExtensions.swift; sourceTree = "<group>"; };
+		F21CF17F21325FA9001DA41B /* BasicStatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicStatCell.xib; sourceTree = "<group>"; };
+		F21CF187213264E8001DA41B /* BasicStatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicStatCell.swift; sourceTree = "<group>"; };
+		F21CF189213270C0001DA41B /* TotalTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalTimeCell.xib; sourceTree = "<group>"; };
+		F21CF18B21327751001DA41B /* TotalTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTimeCell.swift; sourceTree = "<group>"; };
+		F21CF18F2132AFB4001DA41B /* SessionScoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SessionScoreCell.xib; sourceTree = "<group>"; };
+		F21CF1912132B548001DA41B /* SessionScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionScoreCell.swift; sourceTree = "<group>"; };
+		F2308591214B100F00573822 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F2308593214B2EBB00573822 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		F24F601D2139A2D9000F90CE /* Offline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offline.swift; sourceTree = "<group>"; };
+		F24F601F2139A98D000F90CE /* SurfSessionDataAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfSessionDataAPI.swift; sourceTree = "<group>"; };
+		F24F605F213A91CA000F90CE /* SerializationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SerializationExtensions.swift; sourceTree = "<group>"; };
+		F25738CA21360D9200C16B5C /* TotalTimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F25738CB21360D9200C16B5C /* TotalTimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalTimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		F25738CE2136198500C16B5C /* WavesCaughtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavesCaughtCollectionViewCell.swift; sourceTree = "<group>"; };
+		F25738CF2136198500C16B5C /* WavesCaughtCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WavesCaughtCollectionViewCell.xib; sourceTree = "<group>"; };
+		F25A154F212A7BA1004F278A /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		F25A1553212A98AA004F278A /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		F25A155A212AD75B004F278A /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
+		F25A155C212ADFCF004F278A /* LostCoast_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LostCoast_iOS.entitlements; sourceTree = "<group>"; };
+		F25A155E212AEB6F004F278A /* Step4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4ViewController.swift; sourceTree = "<group>"; };
+		F25A1561212AF8F9004F278A /* Step5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step5ViewController.swift; sourceTree = "<group>"; };
+		F27F700D2139619700C5269A /* LostCoastUserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostCoastUserAPI.swift; sourceTree = "<group>"; };
+		F28E2942212E63D7008AC4D3 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		F28E2945212E8FF7008AC4D3 /* PersonalInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoTableViewController.swift; sourceTree = "<group>"; };
+		F28E2947212EC513008AC4D3 /* EditTextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTextFieldViewController.swift; sourceTree = "<group>"; };
+		F28E2949212ECE69008AC4D3 /* BioEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioEditViewController.swift; sourceTree = "<group>"; };
+		F28E294B212ECFF9008AC4D3 /* BirthdayEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayEditViewController.swift; sourceTree = "<group>"; };
+		F28E294D212ED4FD008AC4D3 /* LocationEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationEditTableViewController.swift; sourceTree = "<group>"; };
+		F28E294F212EDA4F008AC4D3 /* LocationDetailEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailEditTableViewController.swift; sourceTree = "<group>"; };
+		F28E2951212EDAC3008AC4D3 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		F28E2953212EDBDD008AC4D3 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		F28E2955212EEE6A008AC4D3 /* SearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarExtension.swift; sourceTree = "<group>"; };
+		F28E2957212EF8A9008AC4D3 /* GenderEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderEditViewController.swift; sourceTree = "<group>"; };
+		F290157D2145CD9F009FDF49 /* RealmServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmServiceAPI.swift; sourceTree = "<group>"; };
+		F2965901212E336A00E01232 /* MainTabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainTabs.storyboard; sourceTree = "<group>"; };
+		F2965904212E3C4000E01232 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		F2965909212E48A900E01232 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F296590B212E499F00E01232 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		F2B28A442133D0DD0027387F /* SetupProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SetupProfile.storyboard; sourceTree = "<group>"; };
+		F2B28A46213403290027387F /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		F2B28A48213411920027387F /* SegmentControlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControlBuilder.swift; sourceTree = "<group>"; };
+		F2B28A4A213429320027387F /* SyncHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncHistoryTableViewController.swift; sourceTree = "<group>"; };
+		F2B28A4E21342AE90027387F /* SyncHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncHistoryCell.swift; sourceTree = "<group>"; };
+		F2B28A4F21342AE90027387F /* SyncHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SyncHistoryCell.xib; sourceTree = "<group>"; };
+		F2C14070212F111D00BFF0C6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		F2C14072212F1D7E00BFF0C6 /* BLEDeviceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDeviceTableViewController.swift; sourceTree = "<group>"; };
+		F2C14075212F26B600BFF0C6 /* AchievementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsTableViewController.swift; sourceTree = "<group>"; };
+		F2C14077212F26D100BFF0C6 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
+		F2C14079212F297300BFF0C6 /* AchievementDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDetailsViewController.swift; sourceTree = "<group>"; };
+		F2C529F72131404400131F35 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		F2C529F921314D8B00131F35 /* FriendProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileTableViewController.swift; sourceTree = "<group>"; };
+		F2C529FB213162BD00131F35 /* ProfileTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileTab.storyboard; sourceTree = "<group>"; };
+		F2C52A1F2132164D00131F35 /* RefreshView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RefreshView.xib; sourceTree = "<group>"; };
+		F2C52A212132173200131F35 /* RefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshView.swift; sourceTree = "<group>"; };
+		F2C52A2321321EB500131F35 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		F2D8F65321266BD600E882CC /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		F2D8F65521266BFB00E882CC /* SignupInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupInfoTableViewController.swift; sourceTree = "<group>"; };
+		F2D8F65921267EA000E882CC /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
+		F2D8F65B212680E300E882CC /* Step1InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1InfoTableViewController.swift; sourceTree = "<group>"; };
+		F2D8F65D212692B500E882CC /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
+		F2D8F65F2126D80F00E882CC /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		F2D8F6602126D80F00E882CC /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		F2D8F6632126D89E00E882CC /* FirebaseServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseServiceAPI.swift; sourceTree = "<group>"; };
+		F2D8F6652126E23000E882CC /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		F2D8F6672126EF8E00E882CC /* LostCoastUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostCoastUser.swift; sourceTree = "<group>"; };
+		F2E095FC213457F50044784B /* RecordCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCollectionViewController.swift; sourceTree = "<group>"; };
+		F2E095FE21345DF10044784B /* RecordCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCategoryCell.swift; sourceTree = "<group>"; };
+		F2E095FF21345DF10044784B /* RecordCategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordCategoryCell.xib; sourceTree = "<group>"; };
+		F2E0960321347C0F0044784B /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		F2E0960521347C330044784B /* AnalyticsTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnalyticsTab.storyboard; sourceTree = "<group>"; };
+		F2E0960721347F7D0044784B /* AnalysisHighlightController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisHighlightController.swift; sourceTree = "<group>"; };
+		F2E096092134819D0044784B /* AnalysisHighlightHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisHighlightHeaderView.swift; sourceTree = "<group>"; };
+		F2E0960B213486BD0044784B /* AnalysisHighlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisHighlightCell.swift; sourceTree = "<group>"; };
+		F2E0960C213486BD0044784B /* AnalysisHighlightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalysisHighlightCell.xib; sourceTree = "<group>"; };
+		F2E096112134FC080044784B /* ChartsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsExtensions.swift; sourceTree = "<group>"; };
+		F2E66882214C2A2700DD0A2F /* XAxisValueFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XAxisValueFormatter.swift; sourceTree = "<group>"; };
+		F2EB0BAB2124EE07009CE5C1 /* LostCoast_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LostCoast_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EB0BAE2124EE07009CE5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2EB0BB02124EE07009CE5C1 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		F2EB0BB32124EE07009CE5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginAndSignup.storyboard; sourceTree = "<group>"; };
+		F2EB0BB52124EE09009CE5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2EB0BB82124EE09009CE5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2EB0BBA2124EE09009CE5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2EB0BC22124F125009CE5C1 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		F2EB0BC42124FB5F009CE5C1 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		F2EB0BC62125684F009CE5C1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F2EB0BCA21258658009CE5C1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2EB0BCC21258ACD009CE5C1 /* LoginInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoTableViewController.swift; sourceTree = "<group>"; };
+		F2F7727A213D306C009CF4F0 /* WindowSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSwitcher.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2EB0BA82124EE07009CE5C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93D6FADC823685E84664C76 /* Pods_LostCoast_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6623E8AFA56F61028445DFF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				104E81C6A1E8808B741B0134 /* Pods-LostCoast_iOS.debug.xcconfig */,
+				98BCE1A3DC3537567E3A59C6 /* Pods-LostCoast_iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C1B8321219D3C1CC59F4C99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA04EB89B2724E7D9AB13321 /* Pods_LostCoast_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F202E864213BB0C800FE9E9A /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				F202E865213BB0EE00FE9E9A /* DesignableButton.swift */,
+				F202E867213BB69600FE9E9A /* DesignableImageView.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		F212D7232137E63E00F21655 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				F24F601D2139A2D9000F90CE /* Offline.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		F21CF179213255E4001DA41B /* Progress Bar */ = {
+			isa = PBXGroup;
+			children = (
+				F21CF17A213255FB001DA41B /* ProgressBar.swift */,
+				F21CF17C21325653001DA41B /* ComparableExtensions.swift */,
+			);
+			path = "Progress Bar";
+			sourceTree = "<group>";
+		};
+		F25A154E212A6E13004F278A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F2D8F6672126EF8E00E882CC /* LostCoastUser.swift */,
+				F212D7262137E79000F21655 /* SurfSessionData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F25A1555212A9943004F278A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F21CF179213255E4001DA41B /* Progress Bar */,
+				F28E2953212EDBDD008AC4D3 /* Locations.swift */,
+				F2B28A48213411920027387F /* SegmentControlBuilder.swift */,
+				F2D8F6652126E23000E882CC /* Alert.swift */,
+				F25A1553212A98AA004F278A /* Enums.swift */,
+				F25A154F212A7BA1004F278A /* ProgressHUD.swift */,
+				F2308591214B100F00573822 /* CustomImageView.swift */,
+				F2E66882214C2A2700DD0A2F /* XAxisValueFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F27F700F213961E300C5269A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F290157D2145CD9F009FDF49 /* RealmServiceAPI.swift */,
+				F2D8F6632126D89E00E882CC /* FirebaseServiceAPI.swift */,
+				F27F700D2139619700C5269A /* LostCoastUserAPI.swift */,
+				F24F601F2139A98D000F90CE /* SurfSessionDataAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		F28E2944212E8FC1008AC4D3 /* Personal Info */ = {
+			isa = PBXGroup;
+			children = (
+				F28E2945212E8FF7008AC4D3 /* PersonalInfoTableViewController.swift */,
+				F28E2947212EC513008AC4D3 /* EditTextFieldViewController.swift */,
+				F28E2949212ECE69008AC4D3 /* BioEditViewController.swift */,
+				F28E294B212ECFF9008AC4D3 /* BirthdayEditViewController.swift */,
+				F28E294D212ED4FD008AC4D3 /* LocationEditTableViewController.swift */,
+				F28E294F212EDA4F008AC4D3 /* LocationDetailEditTableViewController.swift */,
+				F28E2951212EDAC3008AC4D3 /* LocationTableViewCell.swift */,
+				F28E2957212EF8A9008AC4D3 /* GenderEditViewController.swift */,
+			);
+			path = "Personal Info";
+			sourceTree = "<group>";
+		};
+		F2965903212E338200E01232 /* MainTabs */ = {
+			isa = PBXGroup;
+			children = (
+				F2965904212E3C4000E01232 /* MainTabBarController.swift */,
+				F2C529FD2131723300131F35 /* Home Tab */,
+				F2E09602213478E80044784B /* Analytics Tab */,
+				F2965906212E411400E01232 /* Profile Tab */,
+			);
+			path = MainTabs;
+			sourceTree = "<group>";
+		};
+		F2965906212E411400E01232 /* Profile Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F2965909212E48A900E01232 /* ProfileViewController.swift */,
+				F296590B212E499F00E01232 /* ProfileTableViewController.swift */,
+				F28E2944212E8FC1008AC4D3 /* Personal Info */,
+				F2C14074212F25A800BFF0C6 /* Achievements */,
+				F2C529F621313FD400131F35 /* Friends */,
+				F2C1406F212F10D900BFF0C6 /* Settings */,
+			);
+			path = "Profile Tab";
+			sourceTree = "<group>";
+		};
+		F2B28A412133CF660027387F /* Storyboards and XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F2EB0BB22124EE07009CE5C1 /* LoginAndSignup.storyboard */,
+				F2B28A442133D0DD0027387F /* SetupProfile.storyboard */,
+				F2965901212E336A00E01232 /* MainTabs.storyboard */,
+				F2C529FB213162BD00131F35 /* ProfileTab.storyboard */,
+				F25738CB21360D9200C16B5C /* TotalTimeCollectionViewCell.xib */,
+				F2E0960C213486BD0044784B /* AnalysisHighlightCell.xib */,
+				F25738CF2136198500C16B5C /* WavesCaughtCollectionViewCell.xib */,
+				F2EB0BB72124EE09009CE5C1 /* LaunchScreen.storyboard */,
+				F2E0960521347C330044784B /* AnalyticsTab.storyboard */,
+				F2E0960321347C0F0044784B /* HomeTab.storyboard */,
+				F2C52A1F2132164D00131F35 /* RefreshView.xib */,
+				F21CF17F21325FA9001DA41B /* BasicStatCell.xib */,
+				F21CF18F2132AFB4001DA41B /* SessionScoreCell.xib */,
+				F21CF189213270C0001DA41B /* TotalTimeCell.xib */,
+				F2B28A4F21342AE90027387F /* SyncHistoryCell.xib */,
+				F2E095FF21345DF10044784B /* RecordCategoryCell.xib */,
+			);
+			path = "Storyboards and XIBs";
+			sourceTree = "<group>";
+		};
+		F2C1406F212F10D900BFF0C6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F2C14070212F111D00BFF0C6 /* SettingsTableViewController.swift */,
+				F2C14072212F1D7E00BFF0C6 /* BLEDeviceTableViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F2C14074212F25A800BFF0C6 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				F2C14075212F26B600BFF0C6 /* AchievementsTableViewController.swift */,
+				F2C14077212F26D100BFF0C6 /* AchievementTableViewCell.swift */,
+				F2C14079212F297300BFF0C6 /* AchievementDetailsViewController.swift */,
+			);
+			path = Achievements;
+			sourceTree = "<group>";
+		};
+		F2C529F621313FD400131F35 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				F2C529F72131404400131F35 /* FriendsTableViewController.swift */,
+				F2C529F921314D8B00131F35 /* FriendProfileTableViewController.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		F2C529FD2131723300131F35 /* Home Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F2C52A1E2132163C00131F35 /* Refresh View */,
+				F2C52A2321321EB500131F35 /* HomeTableViewController.swift */,
+				F21CF187213264E8001DA41B /* BasicStatCell.swift */,
+				F21CF18B21327751001DA41B /* TotalTimeCell.swift */,
+				F21CF1912132B548001DA41B /* SessionScoreCell.swift */,
+			);
+			path = "Home Tab";
+			sourceTree = "<group>";
+		};
+		F2C52A1E2132163C00131F35 /* Refresh View */ = {
+			isa = PBXGroup;
+			children = (
+				F2C52A212132173200131F35 /* RefreshView.swift */,
+			);
+			path = "Refresh View";
+			sourceTree = "<group>";
+		};
+		F2E09602213478E80044784B /* Analytics Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F2E0960721347F7D0044784B /* AnalysisHighlightController.swift */,
+				F2E096092134819D0044784B /* AnalysisHighlightHeaderView.swift */,
+				F25738CA21360D9200C16B5C /* TotalTimeCollectionViewCell.swift */,
+				F2E0960B213486BD0044784B /* AnalysisHighlightCell.swift */,
+				F25738CE2136198500C16B5C /* WavesCaughtCollectionViewCell.swift */,
+				F2B28A46213403290027387F /* AnalyticsViewController.swift */,
+				F2B28A4A213429320027387F /* SyncHistoryTableViewController.swift */,
+				F2B28A4E21342AE90027387F /* SyncHistoryCell.swift */,
+				F2E095FC213457F50044784B /* RecordCollectionViewController.swift */,
+				F2E095FE21345DF10044784B /* RecordCategoryCell.swift */,
+			);
+			path = "Analytics Tab";
+			sourceTree = "<group>";
+		};
+		F2EB0BA22124EE07009CE5C1 = {
+			isa = PBXGroup;
+			children = (
+				F2EB0BAD2124EE07009CE5C1 /* LostCoast_iOS */,
+				F2EB0BAC2124EE07009CE5C1 /* Products */,
+				6623E8AFA56F61028445DFF8 /* Pods */,
+				8C1B8321219D3C1CC59F4C99 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2EB0BAC2124EE07009CE5C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2EB0BAB2124EE07009CE5C1 /* LostCoast_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2EB0BAD2124EE07009CE5C1 /* LostCoast_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F2EB0BAE2124EE07009CE5C1 /* AppDelegate.swift */,
+				F2B28A412133CF660027387F /* Storyboards and XIBs */,
+				F212D7232137E63E00F21655 /* Database */,
+				F27F700F213961E300C5269A /* API */,
+				F25A154E212A6E13004F278A /* Models */,
+				F2EB0BC9212581F8009CE5C1 /* Login and Signup */,
+				F2965903212E338200E01232 /* MainTabs */,
+				F2EB0BC8212581E8009CE5C1 /* Extensions */,
+				F202E864213BB0C800FE9E9A /* Designables */,
+				F25A1555212A9943004F278A /* Utilities */,
+				F2EB0BCA21258658009CE5C1 /* GoogleService-Info.plist */,
+				F2EB0BBA2124EE09009CE5C1 /* Info.plist */,
+				F2EB0BB52124EE09009CE5C1 /* Assets.xcassets */,
+				F25A155C212ADFCF004F278A /* LostCoast_iOS.entitlements */,
+				F2F7727A213D306C009CF4F0 /* WindowSwitcher.swift */,
+			);
+			path = LostCoast_iOS;
+			sourceTree = "<group>";
+		};
+		F2EB0BC8212581E8009CE5C1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F24F605F213A91CA000F90CE /* SerializationExtensions.swift */,
+				F2EB0BC22124F125009CE5C1 /* UIImageViewExtensions.swift */,
+				F2EB0BC42124FB5F009CE5C1 /* UIButtonExtension.swift */,
+				F2D8F65F2126D80F00E882CC /* StringExtensions.swift */,
+				F2D8F6602126D80F00E882CC /* UITextFieldExtension.swift */,
+				F28E2942212E63D7008AC4D3 /* UIApplicationExtensions.swift */,
+				F28E2955212EEE6A008AC4D3 /* SearchBarExtension.swift */,
+				F2E096112134FC080044784B /* ChartsExtensions.swift */,
+				F2308593214B2EBB00573822 /* TimeIntervalExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F2EB0BC9212581F8009CE5C1 /* Login and Signup */ = {
+			isa = PBXGroup;
+			children = (
+				F2EB0BB02124EE07009CE5C1 /* GreetingViewController.swift */,
+				F2EB0BC62125684F009CE5C1 /* LoginViewController.swift */,
+				F2EB0BCC21258ACD009CE5C1 /* LoginInfoTableViewController.swift */,
+				F2D8F65321266BD600E882CC /* SignupViewController.swift */,
+				F2D8F65521266BFB00E882CC /* SignupInfoTableViewController.swift */,
+				F2D8F65921267EA000E882CC /* Step1ViewController.swift */,
+				F2D8F65B212680E300E882CC /* Step1InfoTableViewController.swift */,
+				F2D8F65D212692B500E882CC /* Step2ViewController.swift */,
+				F25A155A212AD75B004F278A /* Step3ViewController.swift */,
+				F25A155E212AEB6F004F278A /* Step4ViewController.swift */,
+				F25A1561212AF8F9004F278A /* Step5ViewController.swift */,
+			);
+			path = "Login and Signup";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2EB0BAA2124EE07009CE5C1 /* LostCoast_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2EB0BBD2124EE09009CE5C1 /* Build configuration list for PBXNativeTarget "LostCoast_iOS" */;
+			buildPhases = (
+				89506104F35890B82D569CE3 /* [CP] Check Pods Manifest.lock */,
+				F2EB0BA72124EE07009CE5C1 /* Sources */,
+				F2EB0BA82124EE07009CE5C1 /* Frameworks */,
+				F2EB0BA92124EE07009CE5C1 /* Resources */,
+				93A972BC43B53C4902A43F3B /* [CP] Embed Pods Frameworks */,
+				2D40985025AD14DDBA2396A8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LostCoast_iOS;
+			productName = LostCoast_iOS;
+			productReference = F2EB0BAB2124EE07009CE5C1 /* LostCoast_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2EB0BA32124EE07009CE5C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Lost Coast Surf Tech";
+				TargetAttributes = {
+					F2EB0BAA2124EE07009CE5C1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F2EB0BA62124EE07009CE5C1 /* Build configuration list for PBXProject "LostCoast_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2EB0BA22124EE07009CE5C1;
+			productRefGroup = F2EB0BAC2124EE07009CE5C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2EB0BAA2124EE07009CE5C1 /* LostCoast_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2EB0BA92124EE07009CE5C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C529FC213162BD00131F35 /* ProfileTab.storyboard in Resources */,
+				F2EB0BB92124EE09009CE5C1 /* LaunchScreen.storyboard in Resources */,
+				F2E0960621347C330044784B /* AnalyticsTab.storyboard in Resources */,
+				F21CF18A213270C0001DA41B /* TotalTimeCell.xib in Resources */,
+				F2965902212E336A00E01232 /* MainTabs.storyboard in Resources */,
+				F2C52A202132164D00131F35 /* RefreshView.xib in Resources */,
+				F2E0960E213486BD0044784B /* AnalysisHighlightCell.xib in Resources */,
+				F2B28A5121342AE90027387F /* SyncHistoryCell.xib in Resources */,
+				F21CF18021325FA9001DA41B /* BasicStatCell.xib in Resources */,
+				F25738D12136198500C16B5C /* WavesCaughtCollectionViewCell.xib in Resources */,
+				F2B28A452133D0DD0027387F /* SetupProfile.storyboard in Resources */,
+				F2EB0BCB21258658009CE5C1 /* GoogleService-Info.plist in Resources */,
+				F2E0960421347C0F0044784B /* HomeTab.storyboard in Resources */,
+				F21CF1902132AFB4001DA41B /* SessionScoreCell.xib in Resources */,
+				F2E0960121345DF10044784B /* RecordCategoryCell.xib in Resources */,
+				F2EB0BB62124EE09009CE5C1 /* Assets.xcassets in Resources */,
+				F25738CD21360D9200C16B5C /* TotalTimeCollectionViewCell.xib in Resources */,
+				F2EB0BB42124EE07009CE5C1 /* LoginAndSignup.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D40985025AD14DDBA2396A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LostCoast_iOS/Pods-LostCoast_iOS-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LostCoast_iOS/Pods-LostCoast_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89506104F35890B82D569CE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LostCoast_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A972BC43B53C4902A43F3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LostCoast_iOS/Pods-LostCoast_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MKRingProgressView/MKRingProgressView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Segmentio/Segmentio.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MKRingProgressView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Segmentio.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LostCoast_iOS/Pods-LostCoast_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2EB0BA72124EE07009CE5C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2E66883214C2A2700DD0A2F /* XAxisValueFormatter.swift in Sources */,
+				F2E096122134FC080044784B /* ChartsExtensions.swift in Sources */,
+				F28E294A212ECE69008AC4D3 /* BioEditViewController.swift in Sources */,
+				F28E2952212EDAC3008AC4D3 /* LocationTableViewCell.swift in Sources */,
+				F2E0960A2134819D0044784B /* AnalysisHighlightHeaderView.swift in Sources */,
+				F28E2943212E63D7008AC4D3 /* UIApplicationExtensions.swift in Sources */,
+				F28E2958212EF8A9008AC4D3 /* GenderEditViewController.swift in Sources */,
+				F2965905212E3C4000E01232 /* MainTabBarController.swift in Sources */,
+				F28E2948212EC513008AC4D3 /* EditTextFieldViewController.swift in Sources */,
+				F290157E2145CD9F009FDF49 /* RealmServiceAPI.swift in Sources */,
+				F28E2956212EEE6A008AC4D3 /* SearchBarExtension.swift in Sources */,
+				F21CF1922132B548001DA41B /* SessionScoreCell.swift in Sources */,
+				F2E0960D213486BD0044784B /* AnalysisHighlightCell.swift in Sources */,
+				F2D8F6612126D80F00E882CC /* StringExtensions.swift in Sources */,
+				F2D8F6662126E23000E882CC /* Alert.swift in Sources */,
+				F25A1554212A98AA004F278A /* Enums.swift in Sources */,
+				F2EB0BB12124EE07009CE5C1 /* GreetingViewController.swift in Sources */,
+				F2E0960021345DF10044784B /* RecordCategoryCell.swift in Sources */,
+				F2D8F65C212680E300E882CC /* Step1InfoTableViewController.swift in Sources */,
+				F2E095FD213457F50044784B /* RecordCollectionViewController.swift in Sources */,
+				F2B28A5021342AE90027387F /* SyncHistoryCell.swift in Sources */,
+				F212D7272137E79000F21655 /* SurfSessionData.swift in Sources */,
+				F2C52A2421321EB500131F35 /* HomeTableViewController.swift in Sources */,
+				F2C529F82131404400131F35 /* FriendsTableViewController.swift in Sources */,
+				F24F6060213A91CA000F90CE /* SerializationExtensions.swift in Sources */,
+				F2308592214B100F00573822 /* CustomImageView.swift in Sources */,
+				F2C14071212F111D00BFF0C6 /* SettingsTableViewController.swift in Sources */,
+				F2B28A4C213429320027387F /* SyncHistoryTableViewController.swift in Sources */,
+				F2D8F6682126EF8E00E882CC /* LostCoastUser.swift in Sources */,
+				F296590C212E499F00E01232 /* ProfileTableViewController.swift in Sources */,
+				F28E2946212E8FF7008AC4D3 /* PersonalInfoTableViewController.swift in Sources */,
+				F2B28A49213411920027387F /* SegmentControlBuilder.swift in Sources */,
+				F2308594214B2EBB00573822 /* TimeIntervalExtension.swift in Sources */,
+				F28E294C212ECFF9008AC4D3 /* BirthdayEditViewController.swift in Sources */,
+				F2C14073212F1D7E00BFF0C6 /* BLEDeviceTableViewController.swift in Sources */,
+				F21CF18C21327751001DA41B /* TotalTimeCell.swift in Sources */,
+				F21CF17B213255FB001DA41B /* ProgressBar.swift in Sources */,
+				F296590A212E48A900E01232 /* ProfileViewController.swift in Sources */,
+				F28E2954212EDBDD008AC4D3 /* Locations.swift in Sources */,
+				F25738CC21360D9200C16B5C /* TotalTimeCollectionViewCell.swift in Sources */,
+				F27F700E2139619700C5269A /* LostCoastUserAPI.swift in Sources */,
+				F2D8F65421266BD600E882CC /* SignupViewController.swift in Sources */,
+				F2C1407A212F297300BFF0C6 /* AchievementDetailsViewController.swift in Sources */,
+				F2D8F6642126D89E00E882CC /* FirebaseServiceAPI.swift in Sources */,
+				F202E866213BB0EE00FE9E9A /* DesignableButton.swift in Sources */,
+				F2EB0BC52124FB5F009CE5C1 /* UIButtonExtension.swift in Sources */,
+				F25A1562212AF8F9004F278A /* Step5ViewController.swift in Sources */,
+				F28E2950212EDA4F008AC4D3 /* LocationDetailEditTableViewController.swift in Sources */,
+				F2C52A222132173200131F35 /* RefreshView.swift in Sources */,
+				F25A155B212AD75B004F278A /* Step3ViewController.swift in Sources */,
+				F2C529FA21314D8B00131F35 /* FriendProfileTableViewController.swift in Sources */,
+				F21CF17D21325653001DA41B /* ComparableExtensions.swift in Sources */,
+				F24F60202139A98D000F90CE /* SurfSessionDataAPI.swift in Sources */,
+				F28E294E212ED4FD008AC4D3 /* LocationEditTableViewController.swift in Sources */,
+				F2C14076212F26B600BFF0C6 /* AchievementsTableViewController.swift in Sources */,
+				F2C14078212F26D100BFF0C6 /* AchievementTableViewCell.swift in Sources */,
+				F2EB0BC32124F125009CE5C1 /* UIImageViewExtensions.swift in Sources */,
+				F2EB0BCD21258ACD009CE5C1 /* LoginInfoTableViewController.swift in Sources */,
+				F25A155F212AEB6F004F278A /* Step4ViewController.swift in Sources */,
+				F24F601E2139A2D9000F90CE /* Offline.swift in Sources */,
+				F2D8F6622126D80F00E882CC /* UITextFieldExtension.swift in Sources */,
+				F2E0960821347F7D0044784B /* AnalysisHighlightController.swift in Sources */,
+				F2EB0BC72125684F009CE5C1 /* LoginViewController.swift in Sources */,
+				F21CF188213264E8001DA41B /* BasicStatCell.swift in Sources */,
+				F202E868213BB69600FE9E9A /* DesignableImageView.swift in Sources */,
+				F2F7727B213D306C009CF4F0 /* WindowSwitcher.swift in Sources */,
+				F2D8F65E212692B500E882CC /* Step2ViewController.swift in Sources */,
+				F2B28A47213403290027387F /* AnalyticsViewController.swift in Sources */,
+				F2EB0BAF2124EE07009CE5C1 /* AppDelegate.swift in Sources */,
+				F2D8F65A21267EA000E882CC /* Step1ViewController.swift in Sources */,
+				F25A1550212A7BA1004F278A /* ProgressHUD.swift in Sources */,
+				F2D8F65621266BFB00E882CC /* SignupInfoTableViewController.swift in Sources */,
+				F25738D02136198500C16B5C /* WavesCaughtCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F2EB0BB22124EE07009CE5C1 /* LoginAndSignup.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2EB0BB32124EE07009CE5C1 /* Base */,
+			);
+			name = LoginAndSignup.storyboard;
+			sourceTree = "<group>";
+		};
+		F2EB0BB72124EE09009CE5C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2EB0BB82124EE09009CE5C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2EB0BBB2124EE09009CE5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2EB0BBC2124EE09009CE5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2EB0BBE2124EE09009CE5C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 104E81C6A1E8808B741B0134 /* Pods-LostCoast_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LostCoast_iOS/LostCoast_iOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H64R62CZB4;
+				INFOPLIST_FILE = LostCoast_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.LostCastSurf.LostCoast-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F2EB0BBF2124EE09009CE5C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98BCE1A3DC3537567E3A59C6 /* Pods-LostCoast_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LostCoast_iOS/LostCoast_iOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H64R62CZB4;
+				INFOPLIST_FILE = LostCoast_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tech.LostCastSurf.LostCoast-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2EB0BA62124EE07009CE5C1 /* Build configuration list for PBXProject "LostCoast_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EB0BBB2124EE09009CE5C1 /* Debug */,
+				F2EB0BBC2124EE09009CE5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2EB0BBD2124EE09009CE5C1 /* Build configuration list for PBXNativeTarget "LostCoast_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2EB0BBE2124EE09009CE5C1 /* Debug */,
+				F2EB0BBF2124EE09009CE5C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2EB0BA32124EE07009CE5C1 /* Project object */;
+}
